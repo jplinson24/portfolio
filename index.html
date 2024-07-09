@@ -121,26 +121,30 @@
 
     
   
- <section id="contact">
-  <h1 class="header"><span>Contact</span></h1>
-  <form id="contact-form">
-    <div class="input-box">
-      <span>Full Name</span>
-      <input type="text" id="name" placeholder="Enter Your Full Name" required>
-    </div>
-    <div class="input-box">
-      <span>Email</span>
-      <input type="email" id="email" placeholder="Enter Your Valid Email" required>
-    </div>
-    <div class="input-box">
-      <span>Your Message</span>
-      <textarea id="message" placeholder="Enter Your Message" required></textarea>
-    </div>
-    <button type="submit" class="submit-btn">Submit</button>
-  </form>
-  <div id="success-message" class="success-message hidden">Submit Successfully!</div>
-</section>
-
+    <section id="contact">
+      <h1 class="header"><span>Contact</span></h1>
+      <form id="contact-form">
+        <div class="input-box">
+          <span>Full Name</span>
+          <input type="text" id="name" placeholder="Enter Your Full Name" required>
+        </div>
+        <div class="input-box">
+          <span>Email</span>
+          <input type="email" id="email" placeholder="Enter Your Valid Email" required>
+        </div>
+        <div class="input-box">
+          <span>Your Message</span>
+          <textarea id="message" placeholder="Enter Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    
+      <div id="popup-message" class="popup hidden">
+        <p id="popup-text"></p>
+        <button id="close-popup" class="btn">Close</button>
+      </div>
+    </section>
+    
 
 
   
@@ -186,7 +190,7 @@
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
     (function(){
-      emailjs.init("service_jjs71ki"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+      emailjs.init("service_q87exwa"); // Replace "YOUR_USER_ID" with your EmailJS user ID
     })();
   </script>
   <script src="./assets/js/formSubmit.js"></script>
