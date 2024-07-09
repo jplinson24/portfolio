@@ -120,21 +120,22 @@
     </div>
 
     
-  
     <section id="contact">
       <h1 class="header"><span>Contact</span></h1>
-      <form id="contact-form">
+      <form id="contact-form" action="https://formsubmit.co/jplinsonc24@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_captcha" value="false">
         <div class="input-box">
           <span>Full Name</span>
-          <input type="text" id="name" placeholder="Enter Your Full Name" required>
+          <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
         </div>
         <div class="input-box">
           <span>Email</span>
-          <input type="email" id="email" placeholder="Enter Your Valid Email" required>
+          <input type="email" name="email" id="email" placeholder="Enter Your Valid Email" required>
         </div>
         <div class="input-box">
           <span>Your Message</span>
-          <textarea id="message" placeholder="Enter Your Message" required></textarea>
+          <textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
         </div>
         <button type="submit" class="submit-btn">Submit</button>
       </form>
@@ -145,6 +146,9 @@
       </div>
     </section>
     
+    
+    
+    
 
 
   
@@ -152,7 +156,7 @@
     <div class="col-left">
       <div class="col-box">
         <span><i class='bx bxs-location-plus'></i></span>
-        <span>Augustine Street, Barangay San Andres, <br>Cainta, Rizal, Philippines, 1900</span>
+        <span>Augustine St. Cainta, Rizal Philippines, 1900</span>
       </div>
       <div class="col-box">
         <span><i class='bx bxs-envelope'></i></span>
@@ -187,12 +191,6 @@
 
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/downloadbtn.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("service_q87exwa"); // Replace "YOUR_USER_ID" with your EmailJS user ID
-    })();
-  </script>
   <script src="./assets/js/formSubmit.js"></script>
   
 </body>

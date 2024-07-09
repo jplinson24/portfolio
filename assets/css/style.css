@@ -227,6 +227,7 @@ section {
 
 #services {
   background-color: var(--background);
+  padding-top: 7em;
 }
 
 .header {
@@ -275,6 +276,7 @@ section {
 
 #contact {
   background-color: var(--second-background);
+  padding-top: 6em;
 }
 
 form {
@@ -324,7 +326,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10em;
+  gap: 5em;
   bottom: 0;
   background-color: var(--background);
   width: 100%;
@@ -481,6 +483,7 @@ footer {
 #projects {
   background-color: var(--background);
   padding: 5% 15%;
+  padding-top: 7em;
 }
 
 .projects-container {
@@ -601,16 +604,6 @@ footer {
   margin-top: 1em;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.visible {
-  opacity: 1;
-  visibility: visible;
 }
 
 .hidden {
