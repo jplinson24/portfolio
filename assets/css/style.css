@@ -589,3 +589,26 @@ footer {
   background-color: var(--background);
   color: white;
 }
+
+/* Success Message Styles */
+.success-message {
+  color: white;
+  background-color: var(--background);
+  border: 2px solid white;
+  border-radius: 0.5em;
+  padding: 1em;
+  font-size: 1.1em;
+  margin-top: 1em;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}

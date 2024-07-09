@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   
       const serviceID = 'service_jjs71ki'; // Your EmailJS service ID
-      const templateID = 'template_yourTemplateID'; // Your EmailJS template ID
+      const templateID = 'template_e6azwo9'; // Your EmailJS template ID
   
       const params = {
         name: document.getElementById('name').value,
@@ -22,10 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
   
       emailjs.send(serviceID, templateID, params)
         .then(function(response) {
-          alert('SUCCESS!', response.status, response.text);
+          showSuccessMessage();
         }, function(error) {
           alert('FAILED...', error);
         });
     });
+  
+    function showSuccessMessage() {
+      const successMessage = document.getElementById('success-message');
+      successMessage.classList.remove('hidden');
+      successMessage.classList.add('visible');
+      setTimeout(() => {
+        successMessage.classList.remove('visible');
+        successMessage.classList.add('hidden');
+      }, 5000); // Hide message after 5 seconds
+    }
   });
   
