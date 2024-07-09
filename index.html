@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP | Web Developer | Philippines</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo"><img src="./assets/favicon/Jplogo.png" alt="Logo"></a>
+    <ul class="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <i class='bx bx-menu-alt-right' id="menu"></i>
+    <a href="#contact" class="btn">Contact Me</a>
+  </nav>
+
+  <section id="home">
+    <img src="./assets/images/main-photo.png" alt="Main Photo">
+    <div class="info-box">
+      <h1><span>Hello, I'm JP</span></h1>
+      <h3><span>Web Developer</span> based in Manila</h3>
+      <p>A rising Web Developer based in Manila with a degree in IT and a focus on Cybersecurity. I have 1 year of experience and am a fast learner, specializing in WordPress, SEO, front-end (HTML, CSS, JavaScript), and back-end (PHP, MySQL) development. I've worked as an IT Staff and Programming Intern. Certified in Google IT Support. Let's create something amazing together!</p>
+    </div>
+    <div class="btn-box">
+      <a href="#contact" class="btn">Contact Me</a>
+      <div class="btn" id="downloadBtn">View Resume</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-box">
+      <div class="about-info">
+        <h1><span>About Me</span></h1>
+        <p>I'm John Patrick M. Linson, a web developer skilled in front-end and back-end development. 
+          I specialize in HTML, CSS, JavaScript, React, PHP, and MySQL, with experience in WordPress customization and SEO optimization. 
+          I hold a degree in Information Technology, majoring in Cybersecurity. 
+          I'm tech-savvy, a fast learner, and eager to keep expanding my skills. 
+          Let's create something amazing together</p>
+      </div>
+      <h2><span>Skills</span></h2>
+      <div class="skills">
+        <ul>
+          <li><span><i class='bx bxs-chevron-right'></i> Wordpress</span></li>
+          <li><span><i class='bx bxs-chevron-right'></i> HTML</span></li>
+          <li><span><i class='bx bxs-chevron-right'></i> CSS</span></li>
+        </ul>
+        <ul>
+          <li><span><i class='bx bxs-chevron-right'></i> Javascript</span></li>
+          <li><span><i class='bx bxs-chevron-right'></i> ReactJs</span></li>
+          <li><span><i class='bx bxs-chevron-right'></i> MySQL</span></li>
+        </ul>
+      </div>
+    </div>
+    <img src="./assets/images/coffee.jpeg" alt="About Image">
+  </section>
+
+  <section id="services">
+    <h1 class="header"><span>Services</span></h1>
+    <div class="services-container">
+      <div class="box">
+        <h1><span>Web Design</span></h1>
+        <p>Creating visually appealing and user-friendly web designs to enhance user experience.</p>
+        <img src="./assets/images/web-design.jpg" alt="Web Design">
+      </div>
+      <div class="box">
+        <h1><span>Web Development</span></h1>
+        <p>Building robust and efficient websites with a focus on functionality and performance.</p>
+        <img src="./assets/images/web-dev.jpg" alt="Web Development">
+      </div>
+      <div class="box">
+        <h1><span>Graphic Design</span></h1>
+        <p>Designing attractive graphics that complement your brand and website aesthetics.</p>
+        <img src="./assets/images/graphic.jpg" alt="Graphic Design">
+      </div>
+      
+    </div>
+  </section>
+  
+  <section id="projects">
+    <h1 class="header"><span>Projects</span></h1>
+    <div class="projects-container">
+      <div class="project">
+        <img src="./assets/images/winner.png" alt="Project 1">
+        <div class="project-info">
+          <h2>Winneradz</h2>
+          <p>WinnerAdz.com boosts e-commerce success with dynamic video ads.</p>
+          <p><strong>Tools used:</strong> HTML, CSS, JavaScript & PHP</p>
+          <a href="http://winneradz.com" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./assets/images/decoplus.png" alt="Project 2">
+        <div class="project-info">
+          <h2>Decoplus</h2>
+          <p>Discover top-quality Korean products in the Philippines with DecoPlus.</p>
+          <p><strong>Tools used:</strong> Wordpress, Woocommerce, YoastSEO</p>
+          <a href="http://decoplus.com.ph" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./assets/images/winturf.png" alt="Project 2">
+        <div class="project-info">
+          <h2>Winturf</h2>
+          <p>Winturf specializes in premium Korean-imported artificial grass.</p>
+          <p><strong>Tools used:</strong> Wordpress, Woocommerce, YoastSEO</p>
+          <a href="http://winturf.com.ph" target="_blank" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    
+  
+ <section id="contact">
+  <h1 class="header"><span>Contact</span></h1>
+  <form id="contact-form">
+    <div class="input-box">
+      <span>Full Name</span>
+      <input type="text" id="name" placeholder="Enter Your Full Name" required>
+    </div>
+    <div class="input-box">
+      <span>Email</span>
+      <input type="email" id="email" placeholder="Enter Your Valid Email" required>
+    </div>
+    <div class="input-box">
+      <span>Your Message</span>
+      <textarea id="message" placeholder="Enter Your Message" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</section>
+
+
+  
+  <footer>
+    <div class="col-left">
+      <div class="col-box">
+        <span><i class='bx bxs-location-plus'></i></span>
+        <span>Augustine Street, Barangay San Andres, <br>Cainta, Rizal, Philippines, 1900</span>
+      </div>
+      <div class="col-box">
+        <span><i class='bx bxs-envelope'></i></span>
+        <span>jplinsonc24@gmail.com</span>
+      </div>
+      <div class="col-box">
+        <span><i class='bx bxs-phone'></i></span>
+        <span>(+63) 956 305 2862</span>
+      </div>
+    </div>
+    <div class="col-right">
+      <span>About My Services</span>
+      <p>
+        I provide a range of digital services, including web design, web development, and graphic design. My goal is to create visually appealing, functional, and engaging solutions tailored to your needs. Let's work together to bring your vision to life!
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/jpatricklin" target="_blank" class="social-icon">
+            <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="https://www.instagram.com/jpatricklin/" target="_blank" class="social-icon">
+            <i class='bx bxl-instagram-alt'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jplinson24/" target="_blank" class="social-icon">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <a href="https://github.com/jplinson24/" target="_blank" class="social-icon">
+            <i class='bx bxl-github'></i>
+        </a>
+    </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/downloadbtn.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("service_jjs71ki"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+    })();
+  </script>
+  <script src="./assets/js/formSubmit.js"></script>
+  
+</body>
+</html>
