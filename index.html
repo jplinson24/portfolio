@@ -8,11 +8,18 @@
   <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/loadingscreen.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 </head>
 <body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div id="throbber"></div>
+  </div>
+
   <nav>
     <a href="#" class="logo"><img src="./assets/favicon/Jplogo.png" alt="Logo"></a>
     <ul class="links">
@@ -29,7 +36,7 @@
   <section id="home">
     <img src="./assets/images/main-photo.png" alt="Main Photo">
     <div class="info-box">
-      <h1><span id="typing-text">Hello, I'm JP</span><span class="cursor" id="cursor">|</span></h1>
+      <h1><span id="typing-text" data-text="Hello, I'm JP"></span><span class="cursor" id="cursor">|</span></h1>
       <h3><span>Web Developer</span> based in Manila</h3>
       <p>A rising Web Developer based in Manila with a degree in IT and a focus on Cybersecurity. I have 1 year of experience and am a fast learner, specializing in WordPress, SEO, front-end (HTML, CSS, JavaScript), and back-end (PHP, MySQL) development. I've worked as an IT Staff and Programming Intern. Certified in Google IT Support. Let's create something amazing together!</p>
     </div>
@@ -193,6 +200,6 @@
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/downloadbtn.js"></script>
   <script src="./assets/js/formSubmit.js"></script>
-  
+  <script src="./assets/js/loader.js"></script>
 </body>
 </html>
