@@ -11,6 +11,7 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+</head>
 <body>
   <nav>
     <a href="#" class="logo"><img src="./assets/favicon/Jplogo.png" alt="Logo"></a>
@@ -140,18 +141,17 @@
         <button type="submit" class="submit-btn">Submit</button>
       </form>
     
-      <div id="popup-message" class="popup hidden">
-        <p id="popup-text"></p>
-        <button id="close-popup" class="btn">Close</button>
+    <!-- Loading Indicator -->
+<div id="loading-indicator" class="hidden"></div>
+
+<!-- Popup Message -->
+      <div id="popup-message" class="hidden">
+        <span id="popup-text"></span><br>
+        <button id="close-popup">Close</button>
       </div>
+
     </section>
     
-    
-    
-    
-
-
-  
   <footer>
     <div class="col-left">
       <div class="col-box">
@@ -178,6 +178,7 @@
         </a>
         <a href="https://www.instagram.com/jpatricklin/" target="_blank" class="social-icon">
             <i class='bx bxl-instagram-alt'></i>
+
         </a>
         <a href="https://www.linkedin.com/in/jplinson24/" target="_blank" class="social-icon">
             <i class='bx bxl-linkedin-square'></i>

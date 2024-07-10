@@ -10,9 +10,11 @@
 }
 
 :root {
-  --background: rgb(24, 24, 24);
-  --second-background: rgb(20, 20, 20);
+  --background: #222222;
+  --second-background: #1f1f1f;
+  --text-color: #FFFFFF;
 }
+
 
 body {
   min-height: 100vh;
@@ -79,15 +81,18 @@ nav ul a:hover {
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: rgb(0, 255, 149);
   color: var(--background);
 }
 
 span {
-  background: linear-gradient(to right, #6cff52, #3ec5ff);
+  background: linear-gradient(120deg, #1DB954, #FFFFFF);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
+
+
 
 #menu {
   color: white;
@@ -154,7 +159,7 @@ section {
 
 .btn-box .btn:nth-of-type(2):hover {
   background-color: var(--background);
-  color: white;
+  background-color: rgb(0, 255, 149);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -386,7 +391,7 @@ footer {
 }
 
 .social-icons i:hover {
-  color: rgb(21, 255, 0);
+  color: rgb(0, 255, 149);
 }
 
 @media(max-width:968px){
@@ -644,7 +649,7 @@ footer {
 }
 
 .submit-btn:hover {
-  background-color: white;
+  background-color: rgb(0, 255, 149);
   color: var(--background);
 }
 
@@ -666,6 +671,36 @@ footer {
   transition: opacity 0.3s ease-in-out;
 }
 
+/* Loading Throbber Styles */
+#loading-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #000000; /* Light grey */
+  border-top: 8px solid #00FF95; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading-indicator.visible {
+  display: block;
+}
+
 .hidden {
   display: none;
 }
@@ -674,33 +709,52 @@ footer {
   display: block;
 }
 
-.popup {
+/* Popup Message */
+#popup-message {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #333;
-  color: #fff;
+  background: white;
   padding: 20px;
-  border-radius: 5px;
-  z-index: 1001;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
   text-align: center;
 }
 
-.popup .btn {
-  margin-top: 10px;
-  background-color: #555;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
+#popup-message.visible {
+  display: block;
+}
+
+#popup-message.hidden {
+  display: none;
+}
+
+#popup-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#close-popup {
+  margin-top: 20px;
+  padding: 0.5em 1em;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 0.5em;
+  font-size: 1.1em;
+  border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
-  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: transparent;
+  align-items: center;
 }
-
-.popup .btn:hover {
-  background-color: #777;
-}
-
+#close-popup:hover {
+  background-color: rgb(0, 255, 149);
+  color: var(--background);
 
 /* Add these lines to your CSS file */
 
@@ -753,4 +807,5 @@ footer {
   section {
     padding: 2em 5%;
   }
+}
 }
