@@ -126,19 +126,24 @@ section {
 .info-box h1 {
   font-size: 5em;
   font-weight: 500;
+  text-align: center;
 }
 
 .info-box h3 {
   font-size: 2em;
   font-weight: 400;
+  text-align: center;
 }
 
 .info-box p {
   opacity: 0.7;
 }
 
+
 .btn-box {
-  display: flex;
+  display: flex; /* Use flexbox for button layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
   gap: 1em;
 }
 
@@ -240,6 +245,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2em;
+  text-align: center;
 }
 
 .box {
@@ -376,10 +382,11 @@ footer {
   font-size: 2em;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  color: white;
 }
 
 .social-icons i:hover {
-  color: white;
+  color: rgb(21, 255, 0);
 }
 
 @media(max-width:968px){
@@ -418,6 +425,43 @@ footer {
   .links.active{
    display: block;
   }
+
+/* Style for the navigation links on mobile screens */
+@media (max-width: 768px) {
+  .links ul {
+    padding: 0; /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    list-style: none; /* Remove bullet points */
+    width: 100%; /* Make sure it takes the full width */
+    background-color: rgba(0, 0, 0, 0.9); /* Background color to match the nav */
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack the links vertically */
+  }
+
+  .links ul li {
+    width: 100%; /* Ensure each list item takes the full width */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Add some padding for touch targets */
+  }
+
+  .links ul a {
+    display: block; /* Make links block-level for better touch area */
+    width: 100%; /* Ensure links take full width */
+    color: white; /* Text color */
+    font-size: 1em; /* Font size */
+    padding: 10px 0; /* Padding for better touch targets */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .links ul a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+  }
+
+  nav.active .links ul {
+    display: flex; /* Show the menu when nav is active */
+  }
+}
+
 
   #home h1{
     font-size: 4em;
@@ -530,6 +574,17 @@ footer {
 
 .project-info .btn {
   align-self: flex-start;
+  text-align: center; /* Center the text inside the button */
+  padding: 0.5em 1em; /* Add padding for better touch targets */
+  border: none; /* Remove default button border */
+  background-color: rgb(49, 49, 49); /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.project-info .btn:hover {
+  background-color: rgb(100, 100, 100); /* Change background color on hover */
 }
 
 /* Media queries to ensure responsive design */
@@ -581,6 +636,11 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   background-color: transparent;
+  align-items: center;
+}
+
+.submit-btn a{
+  align-items: center;
 }
 
 .submit-btn:hover {
@@ -639,4 +699,58 @@ footer {
 
 .popup .btn:hover {
   background-color: #777;
+}
+
+
+/* Add these lines to your CSS file */
+
+/* Add these lines to your CSS file */
+
+/* Ensure the menu is hidden by default on smaller screens */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5em 5%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  nav ul a {
+    padding: 1em 0;
+    font-size: 1em;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  #menu {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul a {
+    padding: 0.5em 0;
+    font-size: 0.9em;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  section {
+    padding: 2em 5%;
+  }
 }
