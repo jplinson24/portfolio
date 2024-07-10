@@ -809,3 +809,24 @@ footer {
   }
 }
 }
+
+#typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle; /* Aligns text and cursor vertically */
+}
+
+.cursor {
+  display: inline-block;
+  border-right: 2px solid white;
+  animation: blink 0.7s steps(1) infinite;
+  vertical-align: middle; /* Aligns cursor with the text */
+  height: 1.4em; /* Sets cursor height to match the font size */
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
