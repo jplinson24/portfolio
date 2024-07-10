@@ -236,7 +236,7 @@ section {
 }
 
 #services {
-  background-color: var(--background);
+  background-color: var(--second-background);
   padding-top: 7em;
 }
 
@@ -287,7 +287,7 @@ section {
 
 #contact {
   background-color: var(--second-background);
-  padding-top: 6em;
+  margin-top: 6em;
 }
 
 form {
@@ -459,7 +459,7 @@ footer {
   }
 
   .links ul a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+    background-color: rgb(0, 255, 149);
   }
 
   nav.active .links ul {
@@ -553,7 +553,7 @@ footer {
 }
 
 .project:hover {
-  border: 3px solid rgb(100, 100, 100);
+  border: 3px solid rgb(0, 255, 149);
 }
 
 .project img {
@@ -578,7 +578,7 @@ footer {
 }
 
 .project-info .btn {
-  align-self: flex-start;
+  align-self: center;
   text-align: center; /* Center the text inside the button */
   padding: 0.5em 1em; /* Add padding for better touch targets */
   border: none; /* Remove default button border */
@@ -589,7 +589,7 @@ footer {
 }
 
 .project-info .btn:hover {
-  background-color: rgb(100, 100, 100); /* Change background color on hover */
+  background-color: rgb(0, 255, 149); /* Change background color on hover */
 }
 
 /* Media queries to ensure responsive design */
