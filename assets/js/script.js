@@ -1,5 +1,5 @@
 document.getElementById('downloadBtn').addEventListener('click', function() {
-  const resumeUrl = 'assets/pdf/LINSON_JOHN_PATRICK_RESUME.pdf';  
+  const resumeUrl = 'assets/pdf/LINSON_JOHN_PATRICK_CV.pdf';  
   window.open(resumeUrl, '_blank');
 });
 
